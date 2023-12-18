@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/drinks", (req, res) => {
-    res.send({drinks})
+    res.render("index.ejs", {drinks})
 })
 
 app.listen(3000, () => {console.log("The pub is open!")})
