@@ -14,11 +14,11 @@ app.get("/drinks", (req, res) => {
 })
 
 app.get("/drinks/:id", (req, res) => {
-    res.send(req.params.id)
-    // const id = req.params.id
-    // const drink = drinks[id]
+    //res.send(req.params.id)
+    const id = req.params.id
+    const drink = drinks[id]
 
-    // res.send({drink})
+    res.render("show.ejs", {drink})
 })
 
 
