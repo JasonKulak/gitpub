@@ -4,6 +4,8 @@ const drinks = require("./models/drinks.js")
 
 const app = express()
 
+//middleware
+//app.use(express.static("public"))
 
 app.get("/", (req, res) => {
     res.send("Welcome to the Gitpub App!")
